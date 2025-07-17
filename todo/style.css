@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(200, 238, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+#container {
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-width: 30rem;
+}
+#input_div {
+  display: flex;
+  justify-content: center;
+}
+#task_input {
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+#addBtn{
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(79, 69, 223);
+    color: white;
+}
+#addBtn:hover{
+    background-color: rgb(5, 9, 247);
+
+}
+.todo_item{
+  display: flex;
+  justify-content: space-between;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding: 5px 10px;
+
+}
+.todo_item div{
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.todo_item div span{
+  cursor: pointer;
+  background-color: rgb(146, 221, 221);
+  border-radius: 20%;
+  padding: 1px 10px;
+}
+.todo_item div span:hover{
+  background-color: aqua;
+}
