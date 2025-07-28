@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizs Page</title>
+    <link rel="stylesheet" href="./styles/quiz.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav>
+        <div class="logo">Quiz</div>
+        <div class="timer">
+          <span id="question_num">1</span>
+          <span>of</span>
+          <span id="total">total</span>
+          <span>||</span>
+          <span id="time">30</span>
+          <span>sec</span>
+        </div>
+      </nav>
+
+      <!-- Main Section -->
+      <main>
+        <!-- Left Side: Question -->
+        <aside class="left">
+          <span id="question">Q1. What is the national animal ?</span>
+        </aside>
+
+        <!-- Right Side: Options -->
+        <aside class="right">
+          <p>
+            <span>Choose one correct Ans.</span>
+            <span id="reset_btn">Reset</span>
+          </p>
+          <div class="radio-group" id="options_container">
+            <!-- <input type="radio" id="option1" name="choice" value="Lion" />
+            <label for="option1">Lion</label>
+
+            <input type="radio" id="option2" name="choice" value="Tiger" />
+            <label for="option2">Tiger</label>
+
+            <input type="radio" id="option3" name="choice" value="Elephant" />
+            <label for="option3">Elephant</label>
+
+            <input type="radio" id="option4" name="choice" value="deer" />
+            <label for="option4">Deer</label> -->
+          </div>
+          <div id="isCorrect"></div>
+          <button id="next">Next -></button>
+        </aside>
+      </main>
+      <footer>
+        © 2025 Quiz Game. All rights reserved. |
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </footer>
+    </div>
+    <script src="./js/quiz.js"></script>
+  </body>
+</html>

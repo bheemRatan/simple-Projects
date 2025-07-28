@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>result page</title>
+    <link rel="stylesheet" href="./styles/result.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">QuizGame</div>
+        <div class="nav_links">
+          <ul>
+            <li>Home</li>
+            <li>Work</li>
+            <li>Career</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="menu"><i class="ri-menu-line"></i></div>
+      </nav>
+      <!-- result container start -->
+      <div class="result-container">
+        <h1>🎉 Quiz Completed!</h1>
+        <img src="./img/success.jpg" alt="Success" class="result-img" />
+
+        <div class="score-card">
+          <p><strong>Correct Answers:</strong> <span id="correct">15</span></p>
+          <p><strong>Wrong Answers:</strong> <span id="wrong">5</span></p>
+          <p><strong>Total Score:</strong> <span id="score">30</span></p>
+        </div>
+
+        <button onclick="location.href='index.html'">Try Again</button>
+      </div>
+
+      <!-- footer start -->
+      <footer>
+        © 2025 Quiz Game. All rights reserved. |
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </footer>
+    </div>
+    <script src="./js/result.js"></script>
+  </body>
+</html>
